@@ -71,7 +71,27 @@ How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
 - Execute flow of ``02_postgres_taxi_scheduled.yaml`` file and add **backfill** trigger for 2021 yellow taxi data (add label ``backfill=true`` to distinguish backfill and real time dataflow)
 ![backfill-yellow-2021](https://github.com/user-attachments/assets/afbd8a2e-9d85-4a32-b37f-e3465b45143e)
 - Alternatively, you can execute flow of 02_postgres_taxi.yaml and add inputs ``taxi=yellow``, ``year=2021``,``month=03``
+  but modify the configuration for input just like this:
+  ```
+  inputs:
+  - id: taxi
+    type: SELECT
+    displayName: Select taxi type
+    values: [ yellow, green ]
+    defaults: yellow
 
+  - id: year
+    type: SELECT
+    displayName: Select year
+    values: [ "2019", "2020", "2021" ]
+    defaults: "2019"
+
+  - id: month
+    type: SELECT
+    displayName: Select month
+    values: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ]
+    defaults: "01"
+  ```
 - Once the data is ingested to Postgres run the SQL code (i used PgAdmin)
 
 **SQL code**
