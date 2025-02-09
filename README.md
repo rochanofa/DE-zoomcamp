@@ -8,3 +8,7 @@ Codes and files are available [here](https://github.com/rochanofa/DE-zoomcamp/tr
 ## Module 2: Workflow Orchestration
 In this module, we learned about Kestra, to manage data workflows and ETL with a YAML-based configuration.\
 Codes and files are available [here](https://github.com/rochanofa/DE-zoomcamp/tree/main/02-workflow-orchestration).
+
+## Module 3: Data Warehouse
+In this module, we learned about Google Cloud Platform  (GCP) and BigQuery. GCP offers cloud services, and BigQuery is a fully managed, scalable, and serverless data warehouse within GCP designed for fast, large-scale SQL analytics.n.\
+Codes and files are available [here](https://github.com/rochanofa/DE-zoomcamp/tree/main/03-data-warehousing).
