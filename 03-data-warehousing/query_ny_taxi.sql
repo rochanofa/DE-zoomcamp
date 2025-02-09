@@ -17,9 +17,6 @@ AS SELECT * FROM `dezoomcamp-447712.ny_taxi.yellow_tripdata`;
 SELECT COUNT(DISTINCT(PULocationID)) FROM `dezoomcamp-447712.ny_taxi.yellow_tripdata`;
 SELECT COUNT(DISTINCT(PULocationID)) FROM `dezoomcamp-447712.ny_taxi.yellow_nonpartitioned_tripdata`;
 
-SELECT COUNT(DISTINCT(PULocationID)) FROM `dezoomcamp-447712.ny_taxi.yellow_tripdata`;
-SELECT COUNT(DISTINCT(PULocationID)) FROM `dezoomcamp-447712.ny_taxi.yellow_nonpartitioned_tripdata`;
-
 --Q3 HW
 SELECT PULocationID FROM `dezoomcamp-447712.ny_taxi.yellow_nonpartitioned_tripdata`;
 SELECT PULocationID,DOLocationID FROM `dezoomcamp-447712.ny_taxi.yellow_nonpartitioned_tripdata`;
